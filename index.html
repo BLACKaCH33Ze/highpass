@@ -1,32 +1,25 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title> 6.170 Assignment 2: Game of Life </title>
-    <link rel="stylesheet" href="index.css" type="text/css" charset="utf-8">
-    <script type='text/javascript' src='https://code.jquery.com/jquery-2.1.4.min.js'></script>
 
-</head>
+<html lang="en">
 
-<body>
-    <h2> Conway's Game of Life </h2>
-    <canvas id="canvas"=></canvas>
-    <script type="text/javascript" src='view.js'></script>
-    <form id='searchForm'>
-        <label class="searchLabel"><span class='starterStates'> <b>Pick a starter state:</b></span>
-            <select name='states' class='searchField' onChange=" javascript:changeLayout(this.selectedIndex);">
-                <option value="" selected> </option>
-                <option value="Pulsar"> Pulsar </option>
-                <option value="gliderGun"> Glider Gun </option>
-                <option value="Random"> Random </option>
-            </select>
-        </label>
-    </form>
-    <input type='submit' value='Start' id='start'>
-    <input type='submit' value='Stop' id='stop'>
-    <input type='submit' value='Step' id='step'>
-    <input type='submit' value='Reset' id='reset'>
-    <script type="text/javascript" src='model.js'></script>
-    <script type="text/javascript" src='controller.js'></script>
-    </body>
+	<head>
+		<title>Highpas: Server Multiplayer Test</title>
+		<meta charset="utf-8">
+		
+		<link rel="stylesheet" href="style/reset.css">
+		<link rel="stylesheet" href="style/game.css">
+	</head>
+	
+	<body>
+		<canvas id="gameCanvas"></canvas>
+		<script src="js/requestAnimationFrame.js"></script>
+		<script src="js/Keys.js"></script>
+		<script src="js/Player.js"></script>
+		<script src="js/game.js"></script>
+		<script>
+			// Initialise the game
+			init();
+			animate();
+		</script>
+	</body>
 </html>
-

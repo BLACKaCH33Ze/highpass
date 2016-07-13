@@ -1,5 +1,5 @@
 // view.js
-var boxDim = 30; // size of each box in pixels
+var boxDim = 20; // size of each box in pixels
 var numBoxes = 40; // number of rows/columns in canvas
 var canvasDim = boxDim * numBoxes;
 $('canvas').attr( { width: canvasDim, height: canvasDim});
